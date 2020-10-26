@@ -142,6 +142,7 @@ ul#nav li {
   list-style: none;
   height: 48px;
   display: inline-block;
+
 }
 
 ul#nav li a {
@@ -149,10 +150,12 @@ ul#nav li a {
   padding: 8px 13px;
   line-height: 32px;
   color: white;
+  text-decoration: none;
 }
 
 ul#nav li a:active {
   color: rgb(199, 184, 118);
+
 }
 
 ul#nav li a.current {
@@ -219,6 +222,34 @@ ul#nav li a.current {
 #amaro .bottle img {
   max-width: 100%;
   height: auto
+}
+
+#amaro .bottle:hover {
+  opacity: 0.8;
+}
+
+.bottle:hover .overlay {
+  opacity: 1;
+}
+
+#amaro .overlay {
+  transition: .4s ease;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  position: relative;
+  text-align: center;
+  /* top: 50%;
+  left: 50%; */
+
+
+}
+
+#amaro .overlay-image {
+  text-align: center;
+  width: 80%;
+  top: 100%;
+  left: 10%;
 }
 
 #amaro .main {
@@ -455,7 +486,7 @@ blockquote p::after {
 }
 
 #tasting .card:hover {
-  box-shadow: 0 2px 17px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 17px 2px rgba(0,0,0,0.2);
 }
 
 #tasting .amaroCard {
@@ -522,7 +553,7 @@ blockquote p::after {
 /*  Wallpaper Styles
 /* ------------------------------------------------------------------ */
 
-.wallpaper-section{
+.wallpaper-section {
   padding-top: 140px;
   min-height: 480px !important; 
   min-width: fit-content;
@@ -532,39 +563,8 @@ blockquote p::after {
 }
 
 /* ------------------------------------------------------------------ */
-/*  ScrollingWrapper Styles
+/*  Scroll Styles
 /* ------------------------------------------------------------------ */
-
-
-.scrollingWrapperContainer {
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  height: 100%;
-  position: relative;
-}
-
-#amaro-container .scrollToTopIconContainer {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  margin-left: -50px;
-  z-index: 2;
-  cursor: pointer;
-  opacity: 0.4;
-  text-align: center;
-  /* &:hover {
-    opacity: 1;
-    animation: wiggle 1s ease;
-    animation-iteration-count: 1;
-  } */
-  @keyframes wiggle {
-    20% { transform: translateY(6px); }
-    40% { transform: translateY(-6px); }
-    60% { transform: translateY(4px); }
-    80% { transform: translateY(-2px); }
-    100% { transform: translateY(0); }
-  }
-}
 
  #scroll {
   position: fixed;
@@ -594,4 +594,40 @@ blockquote p::after {
     right: 5px;
 
   }
+}
+
+/* ------------------------------------------------------------------ */
+/*  SearchBar Styles
+/* ------------------------------------------------------------------ */
+
+form.search-bar-form input[type=text] {
+  padding: 10px;
+  font-size: 15px;
+  border: 0.9px solid grey;
+  width: 30%;
+  font-family: 'Bitter', serif;
+}
+
+form.search-bar-form input:active {
+  border: 0.9px solid rgb(214, 80, 39);
+}
+
+form.search-bar-form button {
+  width: 3%;
+  padding: 11px;
+  color: white;
+  background:  rgb(218, 92, 53);
+  border: 0.9px solid grey;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
+form.search-bar-form button:hover {
+  background:  rgb(214, 80, 39);
+}
+
+form.search-bar-form::after {
+  content: "";
+  clear: both;
 }

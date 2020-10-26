@@ -1,13 +1,17 @@
 import React from 'react'
 
 
+
 const Amaro = (props) => {
     
     return(
         <section id="amaro">
             
             <div className="bottle">
-                <img src={props.amaro.image} alt={props.amaro.name} className="bottle"/>
+                <img src={props.amaro.image} alt={props.amaro.name} className="bottle" />
+                <div class="overlay">
+                    <div class="text"></div>
+                </div>
             </div>
 
             <div className="main">                    

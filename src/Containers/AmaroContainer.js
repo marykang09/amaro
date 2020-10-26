@@ -1,7 +1,7 @@
 import React from 'react'
 import Amaro from '../Components/Amaro'
 import AmaroList from '../Components/AmaroList'
-
+import SearchBar from '../Components/SearchBar'
 
 // window.onscroll = function(){ scrollFunction()}
 
@@ -16,6 +16,14 @@ import AmaroList from '../Components/AmaroList'
 //     }
 // }
 
+// const searchAmaroList = () => {
+//     AmaroList.filter(a => a.name.toUpperCase().includes(this.state.searchTerm.toUpperCase()))
+// }
+
+// const searchBar = () => {
+
+// }
+
 const scrollToTop = () => {
     window.scrollTo({
         top: 0,
@@ -27,6 +35,9 @@ const AmaroContainer = () => {
         return(
 
             <section id="amaro-container">
+                <div className="search-container">
+                    <SearchBar/>
+                </div>
                 <div className="container" >
                     {AmaroList.map (a => <Amaro amaro={a} key={a.name}/>)}
 
