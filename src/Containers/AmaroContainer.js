@@ -15,14 +15,6 @@ import AmaroList from '../Components/AmaroList'
 //     }
 // }
 
-// const searchAmaroList = () => {
-//     AmaroList.filter(a => a.name.toUpperCase().includes(this.state.searchTerm.toUpperCase()))
-// }
-
-// const searchBar = () => {
-
-// }
-
 const scrollToTop = () => {
     window.scrollTo({
         top: 0,
@@ -66,6 +58,16 @@ class AmaroContainer extends React.Component {
         return(
 
             <section id="amaro-container">
+                
+                <div className="banner-text">
+                    <h1 className="quote"> Browse and Learn </h1>
+                    <p> 
+                        Please keep in mind that the following is in no way an exhaustive list of amaro. These are the somewhat readily available bottles in the United States. There is a plethora of Italian brands and special blends of Amaro that are not yet imported into the US.
+                        <br></br><br></br>
+                    </p>
+                </div>
+                <br></br>
+                <br></br>
                 <div className="search-bar">
                     <form className="search-bar-form">
                         <input 
