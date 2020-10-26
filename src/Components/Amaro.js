@@ -9,8 +9,8 @@ const Amaro = (props) => {
             
             <div className="bottle">
                 <img src={props.amaro.image} alt={props.amaro.name} className="bottle" />
-                <div class="overlay">
-                    <div class="text"></div>
+                <div className="overlay">
+                    <div className="text"></div>
                 </div>
             </div>
 

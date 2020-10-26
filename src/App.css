@@ -614,13 +614,15 @@ form.search-bar-form input:active {
 
 form.search-bar-form button {
   width: 3%;
-  padding: 11px;
+  padding: 0.9% 0.5%;
+  /* padding: 11px; */
   color: white;
   background:  rgb(218, 92, 53);
   border: 0.9px solid grey;
   font-size: 15px;
   cursor: pointer;
   text-align: center;
+  align-content: center;
 }
 
 form.search-bar-form button:hover {
@@ -630,4 +632,21 @@ form.search-bar-form button:hover {
 form.search-bar-form::after {
   content: "";
   clear: both;
+}
+
+.no-match {
+  
+  font-size: 15px;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  form.search-bar-form input[type=text] {
+    width: 80%;
+  }
+  form.search-bar-form button {
+    width: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }

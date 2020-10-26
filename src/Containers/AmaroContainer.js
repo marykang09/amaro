@@ -1,7 +1,6 @@
 import React from 'react'
 import Amaro from '../Components/Amaro'
 import AmaroList from '../Components/AmaroList'
-import SearchBar from '../Components/SearchBar'
 
 // window.onscroll = function(){ scrollFunction()}
 
@@ -31,21 +30,69 @@ const scrollToTop = () => {
     })
 }
 
-const AmaroContainer = () => {
+class AmaroContainer extends React.Component {
+    state = {
+        searchTerm: "",
+        amaroToShow: AmaroList
+    }
+
+    handleNewSearch = (event) => {
+        this.setState({
+            searchTerm: event.target.value
+        })
+    }
+
+    submitNewSearch = (event) => {
+        event.preventDefault()
+
+        let searchedAmaroList
+
+        if (this.state.searchTerm.length > 0){
+            searchedAmaroList = AmaroList.filter(a => a.name.toUpperCase().includes(this.state.searchTerm.toUpperCase())) 
+            if (searchedAmaroList.length === 0){
+                searchedAmaroList = AmaroList
+                alert("Sorry! We don't currently have any information on that amaro. Please try a different search.")
+            }
+        } else {
+            searchedAmaroList = AmaroList
+        }
+
+        this.setState({
+            amaroToShow: searchedAmaroList
+        })
+    }
+
+    render(){
         return(
 
             <section id="amaro-container">
-                <div className="search-container">
-                    <SearchBar/>
+                <div className="search-bar">
+                    <form className="search-bar-form">
+                        <input 
+                            type="text" 
+                            placeholder="Search for an Amaro..." 
+                            name="search" 
+                            value={this.state.searchTerm}
+                            onChange={(event) => this.handleNewSearch(event)}/>
+
+                        <button 
+                            type="submit"
+                            onClick={this.submitNewSearch}> 
+                            <i className="fa fa-search"></i> 
+                        </button>
+                    </form>
+                    { this.state.searchTerm.length > 0 && this.state.amaroToShow.length === 0 ? <div className="no-match"> No matches, please try a new search!</div> : null}
                 </div>
+
                 <div className="container" >
-                    {AmaroList.map (a => <Amaro amaro={a} key={a.name}/>)}
+                    {this.state.amaroToShow.map (a => <Amaro amaro={a} key={a.name}/>)}
 
                 </div>
                 <button id="scroll" onClick={scrollToTop}> BACK TO TOP </button>
 
             </section>
         )
+    }
 }
 
 export default AmaroContainer
