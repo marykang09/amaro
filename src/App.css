@@ -173,6 +173,12 @@ ul#nav li a.current {
   text-align: center;
 
 }
+
+@media only screen and (max-width:620px) {
+  #about {
+    width: 95%;
+  }
+}
 /* ------------------------------------------------------------------ */
 /*  Amaro Styles
 /* ------------------------------------------------------------------ */
@@ -211,6 +217,12 @@ ul#nav li a.current {
   width: 50%;
   border-bottom: 1px solid #E8E8E8;
 } 
+
+@media only screen and (max-width:620px) {
+  #amaro-container .banner-text p {
+    width: 100%;
+  }
+}
 
 #amaro {
   display: grid;
@@ -449,11 +461,14 @@ blockquote p::after {
   }
   #nickandmal .infoLabel {
     width: 100%;
+    padding-top: 30px;
   }
   #nickandmal .tastingSection {
     padding-left: 0;
     padding-right: 0;
   }
+
+
 }
 
 /* ------------------------------------------------------------------ */
