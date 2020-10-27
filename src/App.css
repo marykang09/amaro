@@ -219,6 +219,9 @@ ul#nav li a.current {
 } 
 
 @media only screen and (max-width:620px) {
+  #amaro-container .banner-text h1{
+    width: 100%;
+  }
   #amaro-container .banner-text p {
     width: 100%;
   }
@@ -374,14 +377,19 @@ blockquote p::after {
   color: rgb(218, 92, 53);
 }
 
+@media only screen and (max-width:620px) {
+  #events .infoLabel {
+    width: 100%;
+  }
+}
 
 /* ------------------------------------------------------------------ */
 /*  Nick and Mal Styles
 /* ------------------------------------------------------------------ */
 
 #nickandmal {
-  padding-top: 95px;
-  padding-bottom: 30px;
+  padding-top: 105px;
+  padding-bottom: 80px;
   padding-left: auto;
   padding-right: auto;
 }
@@ -461,13 +469,14 @@ blockquote p::after {
   }
   #nickandmal .infoLabel {
     width: 100%;
-    padding-top: 30px;
   }
   #nickandmal .tastingSection {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-
+  #nickandmal .infoText {
+    padding-bottom: 10px;
+  }
 
 }
 
