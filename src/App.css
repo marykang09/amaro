@@ -150,7 +150,7 @@ ul#nav li a.current {
 /*  About Styles
 /* ------------------------------------------------------------------ */
 #about {
-  padding-top: 90px;
+  padding-top: 105px;
   padding-bottom: 50px;
   /* padding-left: 340px;
   padding-right: 340px; */
@@ -163,7 +163,7 @@ ul#nav li a.current {
 
 #about h1 {
   font-family: 'Bitter', serif;
-  font-size: 19px;
+  font-size: 25px;
   color: black;
   letter-spacing: 1.6px;
   margin: 0;
@@ -192,7 +192,7 @@ ul#nav li a.current {
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 80px;
+  padding-top: 105px;
   width: 80%;
 }
 #amaro-container .banner-text h1 {
@@ -347,7 +347,7 @@ blockquote p::after {
 
 #events {
   padding-top: 105px;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
   line-height: 30px;
 }
 
@@ -500,6 +500,9 @@ blockquote p::after {
   }
   #nickandmal .infoText {
     padding-bottom: 10px;
+  }
+  #nickandmal .infotext-p {
+    width: 100%;
   }
 
 }
