@@ -18,9 +18,9 @@ class NickandMal extends Component {
                 <div className="infoLabel">
                     <h1> Amaro Tasting for Nick & Mal </h1>
 
-                    <p className="infoLabel"> 
+                    <p className="infotext-p"> 
+                        <br></br>
                         <em className="infoText"> 
-                            <br></br>
                             Thank you for hosting us! <br></br>
                             We wanted to help you celebrate the anniversary of your engagement, as well as provide a small taste of Italy that you didn't get to experience this year.
                         </em>
@@ -53,6 +53,7 @@ class NickandMal extends Component {
                 <br></br>
                 <hr></hr>
                 <br></br>
+
                 <button id="scroll" onClick={scrollToTop}> BACK TO TOP </button>
             </section>
         )
