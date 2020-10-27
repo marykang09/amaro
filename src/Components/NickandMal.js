@@ -25,8 +25,8 @@ class NickandMal extends Component {
                             We wanted to help you celebrate the anniversary of your engagement, as well as provide a small taste of Italy that you didn't get to experience this year.
                         </em>
                     </p>
-                
-
+                    <br></br>
+                    <br></br>
                     <img className="photo" src={nickandmal} alt="nickandmal" ></img>
                         
                     <p>    
@@ -38,7 +38,7 @@ class NickandMal extends Component {
                         </em>
                     </p>
                 </div>
-                
+
                 <br></br>
                 <hr></hr>
                 <br></br>

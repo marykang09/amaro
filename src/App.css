@@ -83,6 +83,11 @@ body {
 
 }
 
+@media only screen and (max-width:620px) {
+  #header .banner-text h1 {
+    width: 100%;
+  }
+}
 
 /* ------------------------------------------------------------------ */
 /*  Nav Styles
@@ -343,6 +348,7 @@ blockquote p::after {
 #events {
   padding-top: 105px;
   padding-bottom: 80px;
+  line-height: 30px;
 }
 
 #events h1 {
@@ -400,13 +406,13 @@ blockquote p::after {
 }
 
 #nickandmal hr {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-style: inset;
-    border-width: 0.5px;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-style: inset;
+  border-width: 0.5px;
 }
 
 #nickandmal h1 {
@@ -426,8 +432,14 @@ blockquote p::after {
   margin: auto;
   width: 65%;
   text-align: center;
+  padding-top: 0.1px;
+  line-height: 30px;
   /* padding-left: 60px;
   padding-right: 60px; */
+}
+
+#nickandmal .infoText {
+  line-height: 30px;
 }
 
 #nickandmal span {
@@ -445,8 +457,8 @@ blockquote p::after {
 }
 
 #nickandmal .photo {
-  height: 35%;
-  width: 35%;
+  height: 48%;
+  width: 48%;
 }
 
 #nickandmal .tasting {
