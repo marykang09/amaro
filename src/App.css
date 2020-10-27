@@ -403,6 +403,7 @@ blockquote p::after {
 #nickandmal .tastingSection {
   padding-left: 150px;
   padding-right: 150px;
+  padding-bottom: 80px;
 }
 
 #nickandmal hr {
@@ -432,7 +433,7 @@ blockquote p::after {
   margin: auto;
   width: 65%;
   text-align: center;
-  padding-top: 0.1px;
+  padding-top: 105px;
   line-height: 30px;
   /* padding-left: 60px;
   padding-right: 60px; */

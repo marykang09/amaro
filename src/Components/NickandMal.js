@@ -52,7 +52,7 @@ class NickandMal extends Component {
 
                 <br></br>
                 <hr></hr>
-
+                <br></br>
                 <button id="scroll" onClick={scrollToTop}> BACK TO TOP </button>
             </section>
         )
