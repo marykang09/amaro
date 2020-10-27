@@ -9,7 +9,7 @@ class Footer extends Component {
             <section id="footer">
                 <Wallpaper/> 
                 <div className="copy">
-                    <h3> &copy; Copyright 2020 | Made with 🤍 by Mary Kang </h3>
+                    &copy; Copyright 2020 | Made with 🤍 by Mary Kang 
                 </div>
             </section>
         )

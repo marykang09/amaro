@@ -15,30 +15,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /* ------------------------------------------------------------------ */
 /*  General Styles
 /* ------------------------------------------------------------------ */
@@ -48,6 +24,9 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  padding-bottom: 0px;
+}
 /* ------------------------------------------------------------------ */
 /*  Header Styles
 /* ------------------------------------------------------------------ */
@@ -347,8 +326,8 @@ blockquote p::after {
 /* ------------------------------------------------------------------ */
 
 #events {
-  padding-top: 95px;
-  padding-bottom: 50px;
+  padding-top: 105px;
+  padding-bottom: 80px;
 }
 
 #events h1 {
@@ -553,15 +532,16 @@ blockquote p::after {
   overflow: hidden;
   background-color: #0f0f0f;
   padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
 }
 
 #footer .copy {
   font-family: 'Bitter', serif;
+  letter-spacing: 1px;
   padding-top: 18px;
   padding-bottom: 18px;
   background-color: #0f0f0f;
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
   position: relative;
   color: #525252;
@@ -571,9 +551,7 @@ blockquote p::after {
   display: block !important;
   width: 100% !important;
   margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-
-
+  /* padding-bottom: 0 !important; */
 }
 
 /* ------------------------------------------------------------------ */
