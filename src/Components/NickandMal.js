@@ -29,16 +29,17 @@ class NickandMal extends Component {
                     <br></br>
                     <img className="photo" src={nickandmal} alt="nickandmal" ></img>
                         
-                    <p>    
-                        <em className="infoText"> 
-                            <br></br>
-                            Hope you enjoy! 
-                            <br></br>
-                            with Love, Alex and Mary
-                        </em>
-                    </p>
                 </div>
-
+                <div className="signature">
+                        <p>    
+                            <em className="infoText"> 
+                                <br></br>
+                                Hope you enjoy! 
+                                <br></br>
+                                with Love, Alex and Mary
+                            </em>
+                        </p>
+                </div>
                 <br></br>
                 <hr></hr>
                 <br></br>

@@ -461,6 +461,12 @@ blockquote p::after {
   width: 48%;
 }
 
+#nickandmal .signature {
+  font: 14px/1em 'librebaskerville-regular', serif;
+  color: black;
+  letter-spacing: 1px;
+}
+
 #nickandmal .tasting {
   display: grid;
   grid-column-gap: 5px;
