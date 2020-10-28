@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom'
 
 class Nav extends Component {
     state = {
@@ -6,6 +7,8 @@ class Nav extends Component {
     }
 
     handleClick = (event) => {
+        // event.preventDefault()
+        console.log("clicked!")
         this.setState({
             active: event.target.name
         })
@@ -18,12 +21,13 @@ class Nav extends Component {
                 <nav id="nav-wrap">
                     <a className="mobile-btn" href="#nav-wrap" title="Show Navigation"> Show Navigation </a>
                     <a className="mobile-btn" href="#home" title="Hide Navigation"> Hide Navigation </a>
-
+                    
                     <ul id="nav" className="nav">
-                        <li><a className={this.state.active === "Home" ? "current" : null} name="Home" href="/home" onClick={this.handleClick}> Home </a></li>
-                        <li><a className={this.state.active === "About" ? "current" : null} name="About" href="/about" onClick={this.handleClick}> About </a></li>
-                        <li><a className={this.state.active === "Amaro" ? "current" : null} name="Amaro" href="/amaro" onClick={this.handleClick}> Amaro </a></li>
-                        <li><a className={this.state.active === "Events" ? "current" : null} name="Events" href="/events" onClick={this.handleClick}> Events </a></li>
+                        <li><NavLink className={this.state.active === "Home" ? "current" : null} name="Home" exact to="home" onClick={this.handleClick}> Home </NavLink></li>
+                        <li><NavLink className={this.state.active === "About" ? "current" : null} name="About" exact to="about" onClick={this.handleClick}> About </NavLink></li>
+                        <li><NavLink className={this.state.active === "Amaro" ? "current" : null} name="Amaro" exact to="amaro" onClick={this.handleClick}> Amaro </NavLink></li>
+                        <li><NavLink className={this.state.active === "Events" ? "current" : null} name="Events" exact to="events" onClick={this.handleClick}> Events </NavLink></li>
+
                     </ul>
                 </nav>
             </section>
