@@ -289,6 +289,10 @@ ul#nav li a.current {
   #amaro {
     grid-template-columns: 100%;
   }
+  #amaro .bottle img {
+    max-width: 50vw;
+    max-height: 50vw;
+  }
 }
 
 #amaro .main h1 {
@@ -658,6 +662,14 @@ blockquote p::after {
   }
   #nickandmal .infotext-p {
     width: 100%;
+  }
+  #tasting .card img {
+    max-width: 50vw;
+    max-height: 50vw;
+  }
+  #tasting .tasting-img img {
+    max-width: 50vw;
+    max-height: 50vw;
   }
 
 }

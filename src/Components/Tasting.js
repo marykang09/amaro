@@ -8,7 +8,7 @@ const Tasting = (props) => {
             <div className="card">
                     <br></br>
                     <br></br>
-                    <img src={props.amaro.image} alt={props.amaro.name} />
+                    <img src={props.amaro.image} alt={props.amaro.name} className="tasting-img"/>
                     <div className="amaroCard">
                         <h3> {props.amaro.name} </h3>
                         <p>
