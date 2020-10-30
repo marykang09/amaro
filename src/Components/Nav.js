@@ -26,6 +26,7 @@ class Nav extends Component {
                         <li><NavLink className={this.state.active === "Home" ? "current" : null} name="Home" exact to="home" onClick={this.handleClick}> Home </NavLink></li>
                         <li><NavLink className={this.state.active === "About" ? "current" : null} name="About" exact to="about" onClick={this.handleClick}> About </NavLink></li>
                         <li><NavLink className={this.state.active === "Amaro" ? "current" : null} name="Amaro" exact to="amaro" onClick={this.handleClick}> Amaro </NavLink></li>
+                        <li><NavLink className={this.state.active === "Ingredients" ? "current" : null} name="Ingredients" exact to="ingredients" onClick={this.handleClick}> Ingredients </NavLink></li>
                         <li><NavLink className={this.state.active === "Events" ? "current" : null} name="Events" exact to="events" onClick={this.handleClick}> Events </NavLink></li>
 
                     </ul>
