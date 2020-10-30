@@ -41,12 +41,32 @@ const AmaroList = [
         tasting: "Y"
     },
     {
+        name: "Amaro Lucano",
+        location: "Pisticci Scalo, Basilicata, Italy",
+        ingredients: "aloe ferox, angelica root, bitter orange, blessed thistle, elderberry, gentian, musk yarrow, rue, sage, wormwood, + more, totaling more than 30 ingredients",
+        abv: 28,
+        image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSfkNVPcmEAxaXtfCXR6IVRBXMIUUt9ogGffPfHD0UHERMHHlZ7hPj9hLY_gXOyoyUthXYwcY7y89BU69-qE_kCGQADyhtaWAb0PUDZ2qB1a-tq82QMm2Cgtw&usqp=CAE",
+        text: "“If people have had Meletti and Averna and want something similar, Lucano is the first place I send them,” advises Dhanens. Produced in the southern region of Basilicata (located on the instep of the boot on the map of Italy), Amaro Lucano was founded in 1894 by Pasquale Vena and is currently run by the family’s fourth generation. It’s a medium style with a rich complexity and balanced herbal bitterness, and aromatic notes of licorice and cinnamon. While it’s a frequent go-to as a digestivo, one of my preferred ways to drink it, and a favorite low-ABV drink in general, is with tonic water and a lime.",
+        cite: "https://punchdrink.com/articles/best-amaro-essential-amari-how-to-cocktail-recipes/",
+        tasting: "Y"
+    },
+    {
         name: "Montenegro Amaro Italiano Liqueur",
         location: "Bologna, Emilia-Romagna, Italy",
         ingredients: "eucalyptus, orange peel, vanilla, + more, adding up to a secret recipe of 40 botanicals",
         abv: 23,
         image: "https://www.totalwine.com/dynamic/x490,sq/media/sys_master/twmmedia/h11/h8a/12468340391966.png",
         text:"Montenegro has a signature smooth flavor characterized by a blend of sweet and bitter notes. Traditionally enjoyed as a digestif, it has recently become a favorite cocktail ingredient.",
+        cite: "https://punchdrink.com/articles/best-amaro-essential-amari-how-to-cocktail-recipes/",
+        tasting: "Y"
+    },
+    {
+        name: "Vecchio Amaro del Capo",
+        location: "Limbadi, Calabria, Italy",
+        ingredients: "bitter and sweet orange, chamomile, juniper, liquorice, mandarin, + more, adding up to 29 ingredients",
+        abv: 35,
+        image: "https://www.totalwine.com/dynamic/x490,sq/media/sys_master/twmmedia/h58/he9/12674931884062.png",
+        text:"The history of the Caffo family business dates back to the end of the 19th century, when Giuseppe Caffo, the Master Distiller, class of 1865, began distilling pomace on the side of volcanic Mt. Etna. After years of experience trading and managing distilleries, his dream became reality when in 1915 he bought and old distillery in Santa Venerina, Sicily. He fully dedicated himself to his passion and passed his knowledge along to his children. Giuseppe’s son, Sebastiano Caffo, soon became a Master Distiller himself, and together they founded the company ‘Fratelli Caffo’ with Sebastiano’s brother, Santo Caffo. Initially, Caffo produced a small range of spirits distilled from wine, however the Caffo distillery gradually began producing and earning recognition for their fruit and herbal liqueurs and classic Italian spirits such as Amaro, Limoncino, Amaretto, Sambuca, and aged Grappa.",
         cite: "https://punchdrink.com/articles/best-amaro-essential-amari-how-to-cocktail-recipes/",
         tasting: "Y"
     },
@@ -111,6 +131,26 @@ const AmaroList = [
         tasting: "Y"
     },
     {
+        name: "Varnelli Amaro Sibilla",
+        location: "Muccia, Marche, Italy",
+        ingredients: "bitter and sweet orange peels, cinchona bark, cinnamon, clove, gentian flower, gentian root, honey, rhubarb root",
+        abv: 34,
+        image: "https://www.supermercato24.it/asset/smhd/58ce7/700b2/9c98c/1562496164_img.jpg",
+        text:"The two amari produced by the Varnelli family in the Marche region of Italy—Amaro Sibilla and Amaro Dell’Erborista—will always have a home in my Top Five Favorite Amari list. First produced by Girolamo Varnelli in 1868, one of the signatures of both of his namesake amari is the local raw honey used as a sweetener. It’s pleasantly bitter with a profile of dried, candied fruit and forest floor flavors rounded with coffee and honeysuckle. “It’s a very broad-shouldered amaro, displaying beautiful intensity and deep, aromatic, botanical notes,” says Oskar Kostecki, spirits buyer for New York’s Chambers Street Wines. “It’s full-bodied and rich from start to finish.”",
+        cite: "https://punchdrink.com/articles/best-amaro-essential-amari-how-to-cocktail-recipes/",
+        tasting: "Y"
+    },
+    {
+        name: "Varnelli Amaro Dell’Erborista",
+        location: "Muccia, Marche, Italy",
+        ingredients: "bitter orange peel, cinchona bark, cinnamon, clove, gentian, honey, rhubarb root",
+        abv: 21,
+        image: "https://q6m4h3m6.rocketcdn.me/wp-content/uploads/2020/02/Varnelli-Amaro-Dell_Erborista-1000-ml.jpg",
+        text:"The flip-capped Dell’Erborista bottle and its cloudy contents (it’s unfiltered) are based on a historical family recipe and was first released in the mid-1980s as a tribute to founder Girolamo Varnelli. Of the two Varnelli amari, Dell’Erborista is considered a cult classic among amaro aficionados. “You know you have an amari enthuisast or industry person in the house when they order Dell’Erborista,” says Vini e Fritti’s Greg Cochran.",
+        cite: "https://punchdrink.com/articles/best-amaro-essential-amari-how-to-cocktail-recipes/",
+        tasting: "Y"
+    },
+    {
         name: "Fernet-Branca",
         location: "Milan, Lombardy, Italy",
         ingredients: "aloe ferox, bitter orange, cardamom, chamomile, galangal, laraha, laurel, myrrh, saffron, zedoaria, + more, totaling 27 herbs and botanicals",
@@ -119,16 +159,6 @@ const AmaroList = [
         text:"Joe Keeper describes Fernet-Branca as the Kleenex of amari. “Customers are often surprised that other fernet exist,” he says. “They think fernet is a brand, not a style.” Created in Milan in 1845 using a blend of 27 herbs and botanicals, Fernet-Branca is undoubtedly the most famous fernet, the category of amaro whose key characteristics include an elevated level of alcohol, lower level of sweetener and a dark hue, along with key common ingredients. I couldn’t not include the iconic brand on this list, but the truth is that I don’t really seek it out to drink neat on its own. I drink it via the Hard Start, a 50/50 shot created by Brooklyn bartender Damon Boelte that’s equal parts Fernet-Branca and Branca Menta, the sweeter, lower-proof, peppermint-forward version of Fernet-Branca. There’s a bit of magic when these two are combined, and while it’s traditionally prescribed as a shot, I prefer to sip it as an end-of-the-night drink in a chilled Old-Fashioned glass.",
         cite: "https://punchdrink.com/articles/best-amaro-essential-amari-how-to-cocktail-recipes/",
         tasting: "Y"
-    },
-    {
-        name: "Amaro Lucano",
-        location: "Pisticci Scalo, Basilicata, Italy",
-        ingredients: "aloe ferox, angelica root, bitter orange, blessed thistle, elderberry, gentian, musk yarrow, rue, sage, wormwood, + more, totaling more than 30 ingredients",
-        abv: 28,
-        image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSfkNVPcmEAxaXtfCXR6IVRBXMIUUt9ogGffPfHD0UHERMHHlZ7hPj9hLY_gXOyoyUthXYwcY7y89BU69-qE_kCGQADyhtaWAb0PUDZ2qB1a-tq82QMm2Cgtw&usqp=CAE",
-        text: "“If people have had Meletti and Averna and want something similar, Lucano is the first place I send them,” advises Dhanens. Produced in the southern region of Basilicata (located on the instep of the boot on the map of Italy), Amaro Lucano was founded in 1894 by Pasquale Vena and is currently run by the family’s fourth generation. It’s a medium style with a rich complexity and balanced herbal bitterness, and aromatic notes of licorice and cinnamon. While it’s a frequent go-to as a digestivo, one of my preferred ways to drink it, and a favorite low-ABV drink in general, is with tonic water and a lime.",
-        cite: "https://punchdrink.com/articles/best-amaro-essential-amari-how-to-cocktail-recipes/",
-        tasting: "N"
     },
     {
         name: "Amaro Nardini",
@@ -187,36 +217,6 @@ const AmaroList = [
         abv: 30,
         image: "https://stagrestis.com/wp-content/uploads/2020/03/pp-amaro.jpg",
         text:"Brooklyn’s first modern amaro was created by sommeliers Nicholas Finger and Fairlie McCollough. I was an early adopter of this local amaro and was drawn to the root beer profile, rounded out with warm Christmas spices. Vini e Fritti’s Cochran describes it as “perfectly bitter and balanced, and without a doubt my favorite of the newer brands.” When I heard that Finger and McCollough recently sold their young business to Steven DeAngelo of Brooklyn’s Greenhook Ginsmiths I stockpiled a few bottles, but new co-owner Louie Catizone, assured me that aside from moving production from Gowanus to Greenpoint and a likely bottle re-design in 2018, the formula (and logo) will remain the same",
-        cite: "https://punchdrink.com/articles/best-amaro-essential-amari-how-to-cocktail-recipes/",
-        tasting: "N"
-    },
-    {
-        name: "Varnelli Amaro Dell’Erborista",
-        location: "Muccia, Marche, Italy",
-        ingredients: "bitter orange peel, cinchona bark, cinnamon, clove, gentian, honey, rhubarb root",
-        abv: 21,
-        image: "https://q6m4h3m6.rocketcdn.me/wp-content/uploads/2020/02/Varnelli-Amaro-Dell_Erborista-1000-ml.jpg",
-        text:"The flip-capped Dell’Erborista bottle and its cloudy contents (it’s unfiltered) are based on a historical family recipe and was first released in the mid-1980s as a tribute to founder Girolamo Varnelli. Of the two Varnelli amari, Dell’Erborista is considered a cult classic among amaro aficionados. “You know you have an amari enthuisast or industry person in the house when they order Dell’Erborista,” says Vini e Fritti’s Greg Cochran.",
-        cite: "https://punchdrink.com/articles/best-amaro-essential-amari-how-to-cocktail-recipes/",
-        tasting: "N"
-    },
-    {
-        name: "Varnelli Amaro Sibilla",
-        location: "Muccia, Marche, Italy",
-        ingredients: "bitter and sweet orange peels, cinchona bark, cinnamon, clove, gentian flower, gentian root, honey, rhubarb root",
-        abv: 34,
-        image: "https://www.supermercato24.it/asset/smhd/58ce7/700b2/9c98c/1562496164_img.jpg",
-        text:"The two amari produced by the Varnelli family in the Marche region of Italy—Amaro Sibilla and Amaro Dell’Erborista—will always have a home in my Top Five Favorite Amari list. First produced by Girolamo Varnelli in 1868, one of the signatures of both of his namesake amari is the local raw honey used as a sweetener. It’s pleasantly bitter with a profile of dried, candied fruit and forest floor flavors rounded with coffee and honeysuckle. “It’s a very broad-shouldered amaro, displaying beautiful intensity and deep, aromatic, botanical notes,” says Oskar Kostecki, spirits buyer for New York’s Chambers Street Wines. “It’s full-bodied and rich from start to finish.”",
-        cite: "https://punchdrink.com/articles/best-amaro-essential-amari-how-to-cocktail-recipes/",
-        tasting: "N"
-    },
-    {
-        name: "Vecchio Amaro del Capo",
-        location: "Limbadi, Calabria, Italy",
-        ingredients: "bitter and sweet orange, chamomile, juniper, liquorice, mandarin, + more, adding up to 29 ingredients",
-        abv: 35,
-        image: "https://www.totalwine.com/dynamic/x490,sq/media/sys_master/twmmedia/h58/he9/12674931884062.png",
-        text:"The history of the Caffo family business dates back to the end of the 19th century, when Giuseppe Caffo, the Master Distiller, class of 1865, began distilling pomace on the side of volcanic Mt. Etna. After years of experience trading and managing distilleries, his dream became reality when in 1915 he bought and old distillery in Santa Venerina, Sicily. He fully dedicated himself to his passion and passed his knowledge along to his children. Giuseppe’s son, Sebastiano Caffo, soon became a Master Distiller himself, and together they founded the company ‘Fratelli Caffo’ with Sebastiano’s brother, Santo Caffo. Initially, Caffo produced a small range of spirits distilled from wine, however the Caffo distillery gradually began producing and earning recognition for their fruit and herbal liqueurs and classic Italian spirits such as Amaro, Limoncino, Amaretto, Sambuca, and aged Grappa.",
         cite: "https://punchdrink.com/articles/best-amaro-essential-amari-how-to-cocktail-recipes/",
         tasting: "N"
     }
