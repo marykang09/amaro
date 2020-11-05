@@ -510,10 +510,32 @@ blockquote p::after {
   line-height: 30px;
 }
 
+#events .upcoming {
+  padding-bottom: 50px;
+}
+
+#events .line {
+  border-top: .70px solid black;
+  height: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  padding-bottom: 20px;
+}
+
 #events h1 {
-  /* font: 25px/1.9em 'librebaskerville-regular', serif; */
   font-family: 'Bitter', serif;
-  font-size: 25px;
+  font-size: 30px;
+  color: black;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+}
+
+#events h2 {
+  font-family: 'Bitter', serif;
+  font-size: 20px;
   color: black;
   letter-spacing: 1px;
   margin: 0 auto;
@@ -521,7 +543,7 @@ blockquote p::after {
   text-align: center;
 }
 
-#events h1:hover {
+#events h2:hover {
   color: rgb(218, 92, 53);
 }
 
