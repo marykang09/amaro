@@ -346,10 +346,10 @@ blockquote p::after {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Ingredient Styles 
+/*  Ingredient Styles + Cocktail Styles
 /* ------------------------------------------------------------------ */
 
-#ingredient-container {
+#ingredient-container, #cocktail-container {
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
@@ -357,7 +357,7 @@ blockquote p::after {
   width: 80%;
 }
 
-#ingredient-container .banner-text h1 {
+#ingredient-container .banner-text h1,  #cocktail-container .banner-text h1{
   font-family: 'Bitter', serif;
   font-size: 25px;
   color: black;
@@ -373,7 +373,7 @@ blockquote p::after {
   vertical-align: middle;
 }
 
-#ingredient-container .banner-text p {
+#ingredient-container .banner-text p, #cocktail-container .banner-text p  {
   font-family: 'Bitter', serif;
   font-size: 12px;
   color: black;
@@ -392,9 +392,15 @@ blockquote p::after {
   #ingredient-container .banner-text p {
     width: 100%;
   }
+  #cocktail-container .banner-text h1{
+    width: 100%;
+  }
+  #cocktail-container .banner-text p {
+    width: 100%;
+  }
 }
 
-#ingredient{
+#ingredient, #cocktail {
   display: grid;
   grid-template-columns: 30% 70%;
   padding-top: 40px;
@@ -403,24 +409,24 @@ blockquote p::after {
   /* overflow: hidden; */
 }
 
-#ingredient .image-area {
+#ingredient .image-area, #cocktail .image-area {
   text-align: center;
 }
 
-#ingredient .image-area img {
+#ingredient .image-area img, #cocktail .image-area img {
   max-width: 80%;
   height: auto
 }
 
-#ingredient .ingred-img:hover {
+#ingredient .ingred-img:hover, #cocktail .cocktail-img:hover {
   opacity: 0.8;
 }
 
-.ingred-img:hover .overlay {
+.ingred-img:hover .overlay, .cocktail-img:hover .overlay {
   opacity: 1;
 }
 
-#ingredient .overlay {
+#ingredient .overlay, #cocktail .overlay {
   transition: .4s ease;
   opacity: 0;
   transform: translate(-50%, -50%);
@@ -431,14 +437,14 @@ blockquote p::after {
   left: 50%; */
 }
 
-#ingredient .overlay-image {
+#ingredient .overlay-image, #cocktail .overlay-image {
   text-align: center;
   width: 80%;
   top: 100%;
   left: 10%;
 }
 
-#ingredient .main {
+#ingredient .main, #cocktail .main {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -449,27 +455,30 @@ blockquote p::after {
   #ingredient {
     grid-template-columns: 100%;
   }
+  #cocktail {
+    grid-template-columns: 100%;
+  }
 }
 
-#ingredient .main h1 {
+#ingredient .main h1, #cocktail .main h1 {
   font-family: 'Bitter', serif;
   font-size: 25px;
   color: black;
   letter-spacing: 1px;
 }
 
-#ingredient .main p {
+#ingredient .main p, #cocktail .main p {
   font: 16px 'librebaskerville-regular', serif;
   color: black;
   letter-spacing: 1px;
 }
 
-#ingredient .main span {
+#ingredient .main span, #cocktail .main span {
   color: rgb(141, 141, 133);
   font-weight: bold;
 }
 
-#ingredient .main blockquote p {
+#ingredient .main blockquote p, #cocktail .main blockquote p {
   font-size: 14px;
   background: rgb(245, 233, 212);
   border-radius: 10px;
@@ -483,7 +492,7 @@ blockquote p::after {
   content: '\201D';
 }
 
-#ingredient .main blockquote cite {
+#ingredient .main blockquote cite, #cocktail .main blockquote cite {
   font-size: 10px;
 }
 

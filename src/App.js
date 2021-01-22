@@ -10,6 +10,7 @@ import Error from './Components/Error'
 import Footer from './Components/Footer'
 import NickandMal from './Components/NickandMal';
 import IngredientContainer from './Containers/IngredientContainer'
+import CocktailContainer from './Containers/CocktailContainer'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route exact path="/about" component={About} />
           <Route exact path="/amaro" component={AmaroContainer} />
           <Route exact path="/ingredients" component={IngredientContainer} />
+          <Route exact path="/cocktails" component={CocktailContainer} />
           <Route exact path="/events" component={Events} />
           <Route exact path="/nickandmal" component={NickandMal} />
           <Route render={Error} />
